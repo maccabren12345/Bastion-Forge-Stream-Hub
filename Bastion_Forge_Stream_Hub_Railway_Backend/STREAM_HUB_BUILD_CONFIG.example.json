@@ -1,0 +1,6 @@
+{
+  "BASTION_AUTH_GATEWAY_URL": "https://YOUR-AUTH-SERVICE.up.railway.app",
+  "BASTION_UPDATE_MANIFEST_URL": "https://YOUR-BETA-SERVICE.up.railway.app/streamhub/manifest.json",
+  "BASTION_FEEDBACK_URL": "https://YOUR-BETA-SERVICE.up.railway.app/streamhub/feedback",
+  "BASTION_PRIVATE_BETA_URL": "https://discord.gg/YOUR_PRIVATE_BETA_INVITE"
+}

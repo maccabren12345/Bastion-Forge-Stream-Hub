@@ -1,0 +1,19 @@
+{
+  "app": "stream-hub",
+  "channel": "private-beta",
+  "version": "0.6.0-beta.6",
+  "build": 9,
+  "publishedAt": "2026-08-27T00:00:00Z",
+  "minimumSupportedVersion": "0.6.0-beta.6",
+  "mandatory": false,
+  "installerFile": "BastionForge_StreamHub_PrivateBeta_0.6.0-beta.6_Setup.exe",
+  "installerUrl": "",
+  "sha256": "REPLACE_WHEN_PUBLISHED",
+  "sizeBytes": 0,
+  "notes": [
+    "Private Beta Center added",
+    "Automatic update checks added",
+    "Built-in bug reporting and diagnostics added",
+    "Go-live preflight checks added"
+  ]
+}
