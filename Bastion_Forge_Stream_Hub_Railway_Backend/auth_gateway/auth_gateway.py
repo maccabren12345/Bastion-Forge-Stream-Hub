@@ -105,20 +105,20 @@ def make_authorize_url(session: OAuthSession) -> str:
         })
         return f"https://accounts.google.com/o/oauth2/v2/auth?{query}"
 
-    if provider == "kick":
-        verifier = session.verifier
-        if not verifier:
-            raise RuntimeError("Kick PKCE verifier missing.")
-        query = urlencode({
-            "response_type": "code",
-            "client_id": client_id,
-            "redirect_uri": redirect_uri,
-            "scope": "user:read channel:read chat:write events:subscribe kicks:read",
-            "state": session.state,
-            "code_challenge": code_challenge(verifier),
-            "code_challenge_method": "S256",
-        })
-        return f"https://id.kick.com/oauth/authorize?{query}"
+  if provider == "kick":
+    verifier = session.verifier
+    if not verifier:
+        raise RuntimeError("Kick PKCE verifier missing.")
+    query = urlencode({
+        "response_type": "code",
+        "client_id": client_id,
+        "redirect_uri": redirect_uri,
+        "scope": "user:read channel:read chat:write streamkey:read events:subscribe kicks:read",
+        "state": session.state,
+        "code_challenge": code_challenge(verifier),
+        "code_challenge_method": "S256",
+    })
+    return f"https://id.kick.com/oauth/authorize?{query}"
 
     if provider == "streamlabs":
         query = urlencode({
